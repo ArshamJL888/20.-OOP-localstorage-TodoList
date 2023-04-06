@@ -1,0 +1,402 @@
+@font-face {
+    font-family: "TTNorms";
+    src: url("../fonts/TTNorms-Regular.otf") format("openType");
+}
+
+@font-face {
+    font-family: "TTNorms Light";
+    src: url("../fonts/TTNorms-Light.otf") format("openType");
+}
+
+@font-face {
+    font-family: "TTNorms Medium";
+    src: url("../fonts/TTNorms-Medium.otf") format("openType");
+}
+
+@font-face {
+    font-family: "Times Roman";
+    src: url("../fonts/Times-new-roman-italic.ttf") format("trueType");
+}
+
+html {
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */
+}
+
+
+pre {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+button,
+input {
+    /* 1 */
+    overflow: visible;
+}
+
+button,
+select {
+    /* 1 */
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "TTNorms";
+}
+body {
+    background-color: #F5F5F5;
+}
+.container {
+    max-width: 80%;
+    padding: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+main {
+    margin-top: 3rem;
+}
+
+.addTodo {
+    text-align: left;
+    direction: ltr;
+    padding: 1rem;
+}
+
+.add-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+#todo-input {
+    margin-top: 0.5rem;
+    border: 1.5px solid #AAA;
+    border-radius: 0.3rem;
+    outline: 0;
+    font-size: 1.2rem;
+    width: 90%;
+    padding: 0.5rem 2rem 0.5rem 1rem;
+}
+
+#todo-input:hover {
+    border: 1.5px solid #888;
+    box-shadow: rgb(2, 136, 209) 0px 4px 4px;
+}
+
+.buttons {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    padding: 0.7rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 0.3rem;
+    color: #FFF;
+    border: none;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.addTolist {
+    background-color: rgb(46, 125, 50);
+    margin-right: 0.4rem;
+}
+
+.ClearAll {
+    background-color: rgb(198, 40, 40);
+}
+
+.addTolist:hover {
+    background-color: rgb(67, 160, 71);
+}
+
+.ClearAll:hover {
+    background-color: rgb(229, 57, 53);
+}
+
+.todoList {
+    margin-top: 1rem;
+    padding: 1.5rem;
+}
+
+.list-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.main-list {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.todo-btn {
+    padding: 0.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    color: #000;
+    border: none;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.complete {
+    background-color: rgb(56, 142, 60);
+    margin-right: 0.3rem;
+}
+
+.remove {
+    background-color: rgb(211, 47, 47);
+}
+
+.complete:hover {
+    background-color: rgb(67, 160, 71);
+}
+
+.remove:hover {
+    background-color: rgb(229, 57, 53);
+}
+
+.todo-item {
+    padding: 1.5rem 2rem 1.5rem 1.5rem;
+    background-color: #BDBDBD;
+    border-radius: 0.4rem;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem auto 0 auto;
+}
+
+.todo-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.todo-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: red line-through;
+    color: #777;
+}
